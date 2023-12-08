@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.https//:Projeto.paralax.VisualStudio.com.br</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="img">
+
+</head>
+    <body>
+        <section>
+
+            <img src="img/bg.jpg" id="bg">
+
+            <h2 id="text">
+                Montanhas
+            </h2>
+
+            <img src="img/man.png" id="man">
+
+            <img src="img/clouds_1.png" id="clouds_1">
+
+            <img src="img/clouds_2.png" id="clouds_2">
+            
+            <img src="img/mountain_left.png" id="mountain_left">
+
+            <img src="img/mountain_right.png" id="mountain_right">
+        </section>
+
+        <div class="sec">
+
+            <h2>
+                O movimento paralax?
+            </h2> 
+
+            <p>Parallax é a diferença na posição de objetos vistos em diferentes faixas de visão, medido pelo ângulo de inclinação entre as faixas. Com isso, objetos próximos têm uma maior Parallax que objetos mais distantes, quando observado de posições diferentes. Dessa forma, podemos dizer que o Parallax é o que nos dá a noção de profundidade em nosso campo de visão. <br><br>
+
+            Na computação gráfica, o efeito Parallax costuma ser simulado com a técnica de mover imagens de fundo em uma velocidade mais lenta do que as imagens de primeiro plano, criando no nosso cérebro a ilusão de profundidade em planos 2D. Muito usada em jogos, essa técnica foi popularizada por volta de 1982 no jogo Moon Patrol. <br>
+            <br>
+                
+            Podemos entender melhor como funciona o efeito Parallax no vídeo abaixo, que usa como exemplo a técnica aplicada a um cenário no estilo Super Mario. <br><br>
+                
+                
+            O Parallax na web
+            Já faz um tempo que o efeito Parallax saltou dos jogos para os sites, e através de diferentes técnicas se tornou uma das tendências mais atraentes no design para web. Com o uso principalmente de Javascript, e por vezes de HTML5 e CSS3, muitos sites criaram efeitos bem interessantes e criativos, que proporcionam belas experiências e aumentam a imersão do usuário. Normalmente, esse efeito está atrelado a rolagem da página. <br><br>
+                
+            Um dos primeiros sites a utilizar essa técnica foi o Nike Better World, que faz uso do Parallax no sentido vertical. Entre outros sites interessantes que também usam esse efeito estão o Smokey Bones, Volkswagen Beetle, Sony Table S, Webdesign Karlsruhe e o Mario Kart Wii Experience. <br><br>
+                
+            Smokey Bones <br>
+            Smokey Bones <br>
+            Smokey Bones <br><br>
+            Para conhecer mais projetos web usando Parallax, recomendo que você dê uma olhada na grande coletânea feita pelo blog Splashnology. Caso você esteja interessado em aplicar o efeito Parallax em seus projetos, aqui vão algumas dicas de bons tutoriais: <br><br>
+                
+            Reproduciendo Parallax <br>
+            jParallax <br>
+            Nikebetterworld Parallax Effect Demo <br>
+            Behind The Scenes Of Nike Better World
+            3. <br>
+                
+            </p>
+        <div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    
+        <script>
+
+            gsap.to("#bg", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                scale : 1.5
+            });
+
+            gsap.to("#man", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                scale : 0.5
+            })
+
+            gsap.to("#mountain_left", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                x : -500,
+            })
+
+            gsap.to("#mountain_right", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                x : 500,
+            })
+            
+            gsap.to("#clouds_1", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                x : 200,
+            })
+
+            gsap.to("#clouds_2", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                x : -200,
+            })
+
+            gsap.to("#text", {
+                scrollTrigger : {
+                    scrub : 1
+                },
+                y : 300, 
+            })
+
+        </script>
+    </body>
+</html>
